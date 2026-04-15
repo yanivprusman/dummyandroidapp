@@ -1,4 +1,5 @@
 {
   "description": "dummyAndroidApp",
-  "icon": "Smartphone"
+  "icon": "Smartphone",
+  "sharedLibs": ["android-feedback-lib"]
 }

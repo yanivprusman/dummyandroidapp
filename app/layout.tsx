@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>{children}
-        <FeedbackChat issuesPath="/issues" />
+        <FeedbackChat issuesPath="/feedback-lib-issues" />
 </body>
     </html>
   );

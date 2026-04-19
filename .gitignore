@@ -43,7 +43,7 @@ next-env.d.ts
 # Bind-mounted from addnewfeature (source of truth)
 lib/feedback-lib/
 app/api/feedback/
-app/issues/
+app/feedback-lib-issues/
 
 # Android project feedback-lib (bind-mounted)
 android/feedback-lib/

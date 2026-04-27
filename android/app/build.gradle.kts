@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -19,7 +21,7 @@ android {
 
         // Read IS_PROD from .env at build time
         val envFile = rootProject.file(".env")
-        val envProps = java.util.Properties()
+        val envProps = Properties()
         if (envFile.exists()) envFile.inputStream().use { envProps.load(it) }
         val isProd = envProps.getProperty("IS_PROD", "false").toBoolean()
         buildConfigField("boolean", "IS_PROD", isProd.toString())
